@@ -7,8 +7,10 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix";
-import globalCss from "~/styles/globalCss";
+import globalCss from "./styles/global.css";
+// import { globalCss } from "~/styles/globalCss";
 
+// This function needs to be exported alongside the component with the page you're targeting.
 export function meta() {
   const description = "Description Blog";
   const keywords = "remix react";
@@ -21,8 +23,10 @@ function Document({ children, title }) {
   return (
     <html lang="en">
       <head>
-        <Links />
+        {/* All meta exports on all routes will go here */}
         <Meta />
+        {/* All link exports on all routes will go here */}
+        <Links />
         <title>{title || "Reimx Blog"}</title>
       </head>
       <body>
