@@ -7,8 +7,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix";
-import globalCss from "./styles/global.css";
-// import { globalCss } from "~/styles/globalCss";
+
+// import globalCss from "./styles/globalCss";
+import globalCss from "~/styles/global.css";
 
 // This function needs to be exported alongside the component with the page you're targeting.
 export function meta() {
@@ -45,7 +46,7 @@ function Layout({ children }) {
           Remix
         </Link>
         <ul className="nav">
-          <li to="/posts">Posts</li>
+          <li to="/posts">Posts list item 1</li>
         </ul>
         <div className="container"> {children}</div>
       </nav>

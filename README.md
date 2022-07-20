@@ -1,5 +1,8 @@
 # Welcome to Remix!
 
+Check out this blog if you want to setup remix from scratch
+https://kentcdodds.com/blog/super-simple-start-to-remix
+
 - [Remix Docs](https://remix.run/docs)
 
 ## Development
