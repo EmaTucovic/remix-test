@@ -46,7 +46,11 @@ function Layout({ children }) {
           Remix
         </Link>
         <ul className="nav">
-          <li to="/posts">Blog Post</li>
+          <li>
+            <Link to="/posts" className="logo">
+              Blog Post{" "}
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className="container"> {children}</div>
